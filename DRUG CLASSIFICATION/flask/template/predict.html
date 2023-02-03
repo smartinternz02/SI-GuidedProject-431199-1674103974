@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-image: url("https://i.pinimg.com/564x/18/d8/da/18d8da592a999a56398d34c38a1125c3.jpg");
+        background-size: cover;
+        }
+        h3.big
+        {
+        line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 bg-light text-right">
+                <a href="D:\drug classification using ML\flask\templates\home.html" class="btn btn-info btn-lg">Home</a>
+                <a href="‪D:\drug classification using ML\flask\templates\predict.html" class="btn btn-primary disabled btn-lg">Predict</a>
+                
+            </div>
+        </div>
+
+        <br>
+        <h1><strong>Drug Classification</strong></h1><br>
+        <h4>
+        <form action="‪‪predict.html", method="post">
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Age">Age</label>
+                    <input type="text" class="form-control" name="Age" id="Age"  placeholder="Age" required="required"/>
+                </div>
+            </div>
+
+            <div class="form-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="Sex">Sex</label>
+            </div>
+              <select class="custom-select" id="Sex" name="Sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+              </select>
+            </div><br>
+
+            <div class="form-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="BP">BP</label>
+            </div>
+              <select class="custom-select" name="BP" id="BP">
+                <option value="0">Low</option>
+                <option value="1">Normal</option>
+                <option value="2">High</option>
+              </select>
+            </div><br>
+
+            <div class="form-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="Cholesterol">Cholesterol</label>
+            </div>
+              <select class="custom-select" name="Cholesterol" id="Cholesterol">
+                <option value="0">Normal</option>
+                <option value="1">High</option>
+              </select>
+            </div><br>
+
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Na_to_K">Na_to_K</label>
+                    <input type="text" name="Na_to_K"  id="Na_to_K" class="form-control" placeholder="Na_to_K" required="required"/><br><br>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12 bg-light text-right">
+                <a href="D:\drug classification using ML\flask\templates\submit.html" class="btn btn-success btn-lg">Submit</a>
+            </div>
+        </div>
+
+        
+
+
+        </form>
+        <br>
+        </h4>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
