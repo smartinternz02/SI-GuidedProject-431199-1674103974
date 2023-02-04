@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-image: url("https://i.pinimg.com/564x/18/d8/da/18d8da592a999a56398d34c38a1125c3.jpg");
+        background-size: cover;
+        }
+        h3.big
+        {
+        line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <br>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 bg-light text-right">
+                    <a href="D:\drug classification using ML\flask\templates\home.html" class="btn btn-info btn-lg">Home</a>
+                    <a href="D:\drug classification using ML\flask\templates\predict.html" class="btn btn-primary btn-lg">Predict</a>
+                    
+                </div>
+            </div>
+            <br>
+            <h1><strong>Drug Classification</strong></h1><br>
+            <h3>
+            Based on the given input, the suitable drug for your body condition is {{prediction_text}}.
+            </h3>
+
+        </div>
+
+</body>
+</html>
